@@ -1,16 +1,30 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <Header />
+    <main>
+      <Content />
+      <Services />
+      <Links />
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Content from "@/components/Content.vue";
+import Services from "@/components/Services.vue";
+import Links from "@/components/Links.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
 
   components: {
     Header,
+    Content,
+    Services,
+    Links,
+    Footer,
   },
 };
 </script>
@@ -22,10 +36,7 @@ export default {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
+
 ul {
   display: flex;
   list-style-type: none;

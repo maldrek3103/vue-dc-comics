@@ -1,5 +1,5 @@
 <template>
-  <section id="header">
+  <header>
     <img src="../assets/img/dc-logo.png" alt="Logo" />
     <ul id="navbar">
       <li><a href="#">Characters</a></li>
@@ -13,7 +13,7 @@
       <li><a href="#">News</a></li>
       <li><a href="#">Shop</a></li>
     </ul>
-  </section>
+  </header>
 </template>
 
 <script>
@@ -23,19 +23,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#header {
+header {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
-#header img {
+header img {
   height: 100%;
   width: auto;
 }
 
-#header ul li a.active,
-#header ul li a:hover {
+header ul li a.active,
+header ul li a:hover {
   color: #06f;
 }
 </style>
