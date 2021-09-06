@@ -3,7 +3,7 @@
     <img src="../assets/img/dc-logo.png" alt="Logo" />
     <ul id="navbar">
       <li><a href="#">Characters</a></li>
-      <li><a href="#">Comics</a></li>
+      <li><a href="#" class="active">Comics</a></li>
       <li><a href="#">Movies</a></li>
       <li><a href="#">TV</a></li>
       <li><a href="#">Games</a></li>
@@ -23,8 +23,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 #header img {
   height: 100%;
   width: auto;
+}
+
+#header ul li a.active,
+#header ul li a:hover {
+  color: #06f;
 }
 </style>
