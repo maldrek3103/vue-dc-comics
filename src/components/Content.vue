@@ -1,6 +1,6 @@
 <template>
   <section id="main-content">
-    <div>Content goes here</div>
+    <div><h3>Content goes here</h3></div>
   </section>
 </template>
 
@@ -12,11 +12,19 @@ export default {
 
 <style scoped lang="scss">
 #main-content {
+  height: 140px;
+  background-color: black;
+}
+section {
   display: flex;
   align-items: center;
+}
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h3 {
   font-weight: bold;
-  height: 140px;
   color: #fff;
-  background-color: #000;
 }
 </style>

@@ -36,16 +36,4 @@ export default {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-ul {
-  display: flex;
-  list-style-type: none;
-}
-ul li {
-  margin: 0 1rem;
-}
-ul li a {
-  text-decoration: none;
-  color: #000;
-}
 </style>
