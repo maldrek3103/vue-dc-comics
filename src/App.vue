@@ -3,7 +3,6 @@
     <Header />
     <main>
       <Content />
-      <Services />
       <Links />
     </main>
     <Footer />
@@ -13,8 +12,6 @@
 <script>
 import Header from "@/components/Header.vue";
 import Content from "@/components/Content.vue";
-import Services from "@/components/Services.vue";
-import Links from "@/components/Links.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
@@ -22,8 +19,6 @@ export default {
   components: {
     Header,
     Content,
-    Services,
-    Links,
     Footer,
   },
 };
@@ -35,5 +30,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
 }
 </style>
