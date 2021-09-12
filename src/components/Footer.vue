@@ -18,28 +18,32 @@
       <div class="container">
         <div class="links">
           <div>
-            <h4>DC COMICS</h4>
-            <ul>
-              <li v-for="(link, index) in dcComics" :key="index">
-                <a :href="link.url">{{ link.text }}</a>
-              </li>
-            </ul>
+            <div>
+              <h4>DC COMICS</h4>
+              <ul>
+                <li v-for="(link, index) in dcComics" :key="index">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4>SHOP</h4>
+              <ul>
+                <li v-for="(link, index) in shop" :key="index">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
-            <h4>SHOP</h4>
-            <ul>
-              <li v-for="(link, index) in shop" :key="index">
-                <a :href="link.url">{{ link.text }}</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4>DC</h4>
-            <ul>
-              <li v-for="(link, index) in dc" :key="index">
-                <a :href="link.url">{{ link.text }}</a>
-              </li>
-            </ul>
+            <div>
+              <h4>DC</h4>
+              <ul>
+                <li v-for="(link, index) in dc" :key="index">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
             <h4>SITES</h4>
@@ -50,9 +54,8 @@
             </ul>
           </div>
         </div>
-        <div class="links-logo">
-          <img src="../assets/img/dc-logo-bg.png" alt="" />
-        </div>
+
+        <img src="../assets/img/dc-logo-bg.png" alt="" class="links-logo" />
       </div>
     </section>
 
@@ -62,8 +65,8 @@
         <div>
           <button>Sign-up Now</button>
         </div>
-        <div>
-          <h5><a href="#">Follow Us</a></h5>
+        <div class="social-links">
+          <a href="#"><h5>Follow Us</h5></a>
           <ul>
             <li v-for="(links, index) in socials" :key="index">
               <img :src="links.img" :alt="links.text" />
@@ -248,6 +251,8 @@ export default {
   margin: 0 auto;
 }
 #services {
+  position: relative;
+  z-index: 1;
   background-color: #0282f9;
 }
 #services ul {
@@ -268,6 +273,7 @@ export default {
   background-position: center;
 }
 #more-links .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -281,6 +287,8 @@ export default {
 }
 
 #socials {
+  position: relative;
+  z-index: 1;
   background-color: #303030;
 }
 #socials .container {
@@ -290,5 +298,21 @@ export default {
 }
 #socials .container div {
   padding: 2rem 0;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+#socials ul {
+  display: flex;
+}
+#socials li {
+  margin-left: 1.2rem;
+}
+
+.links-logo {
+  position: absolute;
+  right: 0;
+  z-index: 0;
 }
 </style>
