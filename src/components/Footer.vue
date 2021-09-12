@@ -65,7 +65,9 @@
         <div>
           <h5><a href="#">Follow Us</a></h5>
           <ul>
-            <li v-for="(links, index) in socials" :key="index"></li>
+            <li v-for="(links, index) in socials" :key="index">
+              <img :src="links.img" :alt="links.text" />
+            </li>
           </ul>
         </div>
       </div>
@@ -82,27 +84,27 @@ export default {
         {
           text: "DIGITAL COMICS",
           url: "#",
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: require("../assets/img/buy-comics-digital-comics.png"),
         },
         {
           text: "DC MERCHANDISE",
           url: "#",
-          img: "../assets/img/buy-comics-merchandise.png",
+          img: require("../assets/img/buy-comics-merchandise.png"),
         },
         {
           text: "SUBSCRIPTION",
           url: "#",
-          img: "../assets/img/buy-comics-subscription.png",
+          img: require("../assets/img/buy-comics-subscriptions.png"),
         },
         {
           text: "COMIC SHOP LOCATION",
           url: "#",
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: require("../assets/img/buy-comics-shop-locator.png"),
         },
         {
           text: "DC POWER VISA",
           url: "#",
-          img: "../assets/img/buy-comics-power-visa.svg",
+          img: require("../assets/img/buy-dc-power-visa.svg"),
         },
       ],
       dcComics: [
@@ -216,18 +218,23 @@ export default {
       socials: [
         {
           text: "Facebook",
+          img: require("../assets/img/footer-facebook.png"),
         },
         {
           text: "Twitter",
+          img: require("../assets/img/footer-facebook.png"),
         },
         {
           text: "YouTube",
+          img: require("../assets/img/footer-facebook.png"),
         },
         {
           text: "Pinterest",
+          img: require("../assets/img/footer-facebook.png"),
         },
         {
           text: "Geo",
+          img: require("../assets/img/footer-facebook.png"),
         },
       ],
     };
